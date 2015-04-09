@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2006C6DE-7CC6-46E2-AC05-A683C059531A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kutuphaneyazilim</RootNamespace>
+    <AssemblyName>kutuphaneyazilim</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmKitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitapEkle.Designer.cs">
+      <DependentUpon>frmKitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitapList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitapList.Designer.cs">
+      <DependentUpon>frmKitapList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitapUpdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitapUpdt.Designer.cs">
+      <DependentUpon>frmKitapUpdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKurumBlgs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKurumBlgs.Designer.cs">
+      <DependentUpon>frmKurumBlgs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLisans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLisans.Designer.cs">
+      <DependentUpon>frmLisans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOduncGeriAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOduncGeriAl.Designer.cs">
+      <DependentUpon>frmOduncGeriAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOduncVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOduncVer.Designer.cs">
+      <DependentUpon>frmOduncVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAdd.Designer.cs">
+      <DependentUpon>frmUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classglb.cs" />
+    <Compile Include="frmUserDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserDel.Designer.cs">
+      <DependentUpon>frmUserDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserUpdt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserUpdt.Designer.cs">
+      <DependentUpon>frmUserUpdt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmKitapEkle.resx">
+      <DependentUpon>frmKitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitapList.resx">
+      <DependentUpon>frmKitapList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitapUpdt.resx">
+      <DependentUpon>frmKitapUpdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKurumBlgs.resx">
+      <DependentUpon>frmKurumBlgs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLisans.resx">
+      <DependentUpon>frmLisans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOduncGeriAl.resx">
+      <DependentUpon>frmOduncGeriAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOduncVer.resx">
+      <DependentUpon>frmOduncVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAdd.resx">
+      <DependentUpon>frmUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserDel.resx">
+      <DependentUpon>frmUserDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserUpdt.resx">
+      <DependentUpon>frmUserUpdt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dataBase\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
